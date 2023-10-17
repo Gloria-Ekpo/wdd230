@@ -12,12 +12,13 @@
     <meta property="og:description"
         content="WDD 230 - Web Frontend Development - Calabar Chamber Project Home Page">
     <meta property="og:image" content="https://gloria-ekpo.github.io/wdd230/chamber/images">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="./images/favicon (1).ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script src="scripts/getdates.js" defer></script>
+    <script src="./scripts/getdates.js" defer></script>
+    <script src="./scripts/darkmode.js" defer></script>
 </head>
 <body>
     <header>
@@ -27,9 +28,58 @@
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
-    <main></main>
-    <footer></footer>
+    <div><button id="dark-mode">DARK</button></div>
+    <main id="home-main">
+        <section id="hero" class="home-section">
+            <h2>Hero Image</h2>
+            <img src="./images/Calabar hero image.jpg" alt="Calabar hero image">
+            <button>Call to Action</button>
+        </section>
+        <section id="current-events" class="home-section">
+            <h2>Current Events</h2>
+            <img src="./images/calabar current.jpg" alt="women rights">
+            <p><b>How Nigeria's New Women Affairs Minister Hopes to Achieve Empowerment, Gender Violence Goals</b></p>
+            <p>The minister's presentation of the communique at the end of the 23rd National Council on Women Affairs in Calabar,
+                on 22  August, was the first opportunity to voice over her vision.
+            </p>
+        </section>
+
+        <section id="weather" class="home-section">
+            <h2>Weather</h2>
+            <p>The weather is Mostly Cloudy with a temperature of 74 degrees fahrenheit.
+            </p>
+        </section>
+
+        <div id="spotlight" class="home-section">
+            <section id="spotlight-1" class="spotlight-card">
+                <h3>Spotlight 1</h3>
+                <img src="#" alt="spotlight">
+                <p>Highlight of</p>
+            </section>
+        </div>
+
+
+
+    </main>
+    <footer>
+        <hr>
+        <div class="footer-logo">
+            <p><img src="./images/rsz_chamber-logo.png" alt="Calabar Chamber Logo" height="160" width="160"></p>
+        </div>
+        <div class="footer-contact">
+            <p>Calabar Chamber of Commerce</p>
+            <p>Address</p>
+            <p>Phone number</p>
+        </div>
+        <hr>
+        <div class="footer-base">
+            <p>&copy;<span id="currentyear"></span> Gloria Ekpo | Chamber Project WDD 230 | Last Modified: <span id="lastmodified"></span></p>
+        </div>
+    </footer>
 </body>
 </html>

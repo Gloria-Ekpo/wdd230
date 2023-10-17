@@ -1,0 +1,106 @@
+:root{
+    --text-color: rgb(235, 209, 45);
+    --background-color: #6192ec;
+    --hover-background-color: #3425bc;    
+    --hover-color: black;
+}
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background-color: #883dc1; */
+    color: var(--text-color);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* button{
+    color: var(--text-color);
+    background-color: var(--background-color);
+} */
+
+header, footer, main, nav{
+    background-color: var(--background-color);
+}
+
+/** Header styles **/
+
+header{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+/* #dark-mode{
+    position:absolute;
+    top: 1rem;
+    right: 2rem; 
+    background-color: var(--background-color);
+} */
+
+header img{
+    flex: 1;
+}
+
+header h1{
+    flex: 2;
+    text-align: center;    
+}
+
+footer{
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
+}
+/** Menu styles **/
+
+nav ul{
+    list-style: none;
+    padding-inline-start: 0px;
+    display: flex;
+    flex-direction: row;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+}
+
+nav ul li{
+    flex: 1;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: var(--hover-background-color);
+    color: var(--hover-color);
+}
+
+nav ul li a{
+    display: block;    
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 1rem;
+    text-align: center;
+    
+}
+
+nav ul li a:hover{
+    background-color: var(--background-color);
+}
+
+/* main styles */
+#hero img{
+    width: 100%;
+}
+
+#hero h2{
+    padding: 1rem;
+    margin-block-end: 0px;
+    margin-block-start: 0px;  
+}
+#home-main section{
+    text-align: center;
+}
+
+#home-main section p{
+    padding: 1rem;
+}
+#home-main h2{
+    text-align: center;
+}

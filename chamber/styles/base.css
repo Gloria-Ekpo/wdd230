@@ -1,7 +1,7 @@
-:root{
-    --text-color: rgb(235, 209, 45);
-    --background-color: #6192ec;
-    --hover-background-color: #3425bc;    
+*{
+    --text-color: rgb(10, 10, 9);
+    --background-color: rgb(177, 169, 169);
+    --hover-background-color: #7eb2dd;    
     --hover-color: black;
 }
 
@@ -13,10 +13,10 @@ body{
     margin: 0 auto;
 }
 
-/* button{
+button{
     color: var(--text-color);
     background-color: var(--background-color);
-} */
+}
 
 header, footer, main, nav{
     background-color: var(--background-color);
@@ -28,14 +28,17 @@ header{
     display: flex;
     position: relative;
     align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0px;
 }
 
-/* #dark-mode{
+#dark-mode{
     position:absolute;
     top: 1rem;
     right: 2rem; 
     background-color: var(--background-color);
-} */
+}
 
 header img{
     flex: 1;
@@ -47,6 +50,7 @@ header h1{
 }
 
 footer{
+    display: grid;
     margin: 0 auto;
     text-align: center;
     padding: 1rem;
@@ -104,3 +108,21 @@ nav ul li a:hover{
 #home-main h2{
     text-align: center;
 }
+
+/* .footer-logo {
+    height: 150px;
+} */
+
+/** Hamburger Menu Stuff **/
+
+/* .menu-hide,
+.menu-show {
+    display: none;
+    background-color: white;
+    border: 1px solid grey;
+} */
+
+/* .menu-hide.showing,
+.menu-show.showing {
+    display: block;
+} */

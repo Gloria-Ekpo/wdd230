@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gloria Ekpo" />
+    <meta name="description" content="WDD 230 - Web Frontend Development - Gloria Ekpo course assignment portal"  />
+    
+    <title>Gloria Ekpo - WDD 230 - Web Frontend Development</title>
+
+    <meta property="og:url" content="https://gloria-ekpo.github.io/wdd230/index.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Gloria Ekpo - WDD 230 - Web Frontend Development" />
+    <meta property="og:description" content="WDD 230 - Web Frontend Development - Gloria Ekpo course assignment portal" />
+    <meta property="og:image" content="https://www.bing.com/images/search?view=detailV2&ccid=MjNNhHOU&id=B14DF09874891CD6C5178AC5D635415E241594E2&thid=OIP.MjNNhHOUmejSzxgDx60jvQHaEr&mediaurl=https%3a%2f%2frnn.ng%2fwp-content%2fuploads%2f2021%2f03%2fCalabar.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.32334d84739499e8d2cf1803c7ad23bd%3frik%3d4pQVJF5BNdbFig%26pid%3dImgRaw%26r%3d0&exph=648&expw=1024&q=Nigeria%2c+calabar&simid=607999840168711036&FORM=IRPRST&ck=2DCA64278C8BC9F0989D13C19CD55379&selectedIndex=22&ajaxhist=0&ajaxserp=0" />
+    
+    <link rel="icon" href="../images/favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/hamburger-menu.js" defer></script>
+    <script src="./scripts/windchill.js" defer></script>
+    <script src="scripts/site.visit.js" defer></script>
+    <script src="scripts/darkmode.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <section>
+    <img src="images/rsz_chamber-logo.png" alt="Profile image">
+    <h1>Calabar Chamber of Commerce</h1>
+    </section>
+  </header> 
+
+  <nav>
+    <button class="menu-hide">X</button><button class="menu-show shoing">&equiv;</button>
+        <ul id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+  </nav>
+  <div><button id='dark-mode'>DARK</button></div>
+    <main id="discover-main">
+        <div id="discover-sidebar">
+            <section id="discover-message">
+                <h3></h3>
+            </section>
+
+            <section id="discover-content">
+                <h2>Demographics</h2>
+                <p>Population: 370,000</p>                
+            </section>
+
+            <section id="discover-content">
+                <h2>Economy</h2>
+                <p>Calabar's economy is diverse and robust, with key sectors including tourism,
+                    agriculture, and manufacturing.
+                </p>   
+                <p>The city is also home to the Calabar Free Trade Zone, attracting businesses from around the globe.</p>             
+            </section>
+
+            <section id="discover-content">
+                <h2>Attractions</h2>
+                <p>From the historical Slave Museum to the beautiful Marina Resort, there's something for everyone in Calabar.</p>       
+                <p>Natur lovers can explore the National Park, while those interested in culture can visit the Cultural Center Complex.</p>         
+            </section>
+
+            <section id="discover-content">
+                <h2>Events</h2>
+                <p>Calabar is known for its lively events calender. The highlight of the year is the Calabar Carnival attracting visitors from around the world.</p>
+                <p>Other events include the Boat Regatta and the Ekpe Festival</p>                
+            </section>
+
+        </div>
+
+        <div id="discover-images">
+            <picture>
+                <img src="https://shipsandports.com.ng/wp-content/uploads/2019/10/Obong-of-Calabar-.jpg" alt="meeting" loading="lazy" width="600">
+            </picture>
+            <h3>Obong</h3>
+            <picture>
+                <img src="https://2.bp.blogspot.com/-XPykx0ymbiY/VVRkGglrF5I/AAAAAAAAAYc/C5p1ZVnAGL0/s1600/079.JPG" alt="meeting" loading="lazy" width="600">
+            </picture>
+            <h3>Majestic statue</h3>
+            <picture>
+                <img src="https://ndlink.org/wp-content/uploads/2019/01/Calabar-festival-1024x683.jpg" alt="kittens!" loading="lazy" width="600">
+            </picture>
+            <h3>Calabar Carnival</h3>
+            <picture>
+                <img src="https://estateintel.com/app/uploads/2014/10/calabar-mono-rail-cruises-to-calabar-international-convention-center-from-tinapa-1.jpg" alt="kittens!" loading="lazy" width="600">
+            </picture>
+            <h3>Convention Center</h3>
+            <picture>
+                <img src="https://www.intamintransportation.com/wp-content/uploads/2020/12/028-1110x620.jpg" alt="kittens!" loading="lazy" width="600">
+            </picture>
+            <h3>Intamin Transportation</h3>
+            <picture>
+                <img src="https://shipsandports.com.ng/wp-content/uploads/2019/10/Obong-of-Calabar-.jpg" alt="kittens!" loading="lazy" width="600">
+            </picture>
+            <h3>Obong</h3>
+        </div>
+    </main>
+
+  <footer>
+    <hr>
+    <div class="footer-logo">
+        <p><img src="./images/rsz_chamber-logo.png" alt="Calabar Chamber Logo" height="160" width="160"></p>
+    </div>
+    <div class="footer-contact">
+        <p>Calabar Chamber of Commerce</p>
+        <p>No. 1 Marian Road, Calabar</p>
+        <p><a href="#">info@calabarchamber.org</a></p>
+        <p>+234817005555</p>
+    </div>
+    <hr>
+    <div class="footer-base">
+        <p>&copy;<span id="currentyear"></span> Gloria Ekpo | Chamber Project WDD 230 | Last Modified: <span id="lastmodified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+
+
+

@@ -6,40 +6,67 @@
     <title>Calabar Chamber of Commerce</title>
     <meta name="description" content="WDD 230 - Web Frontend Development - Calabar Chamber Project Home Page">
     <meta name="author" content="Gloria Ekpo">
+
     <meta property="og:url" content="https://gloria-ekpo.github.io/wdd230/chamber/index.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="WDD 230 - Calabar Chamber of Commerce">
     <meta property="og:description"
         content="WDD 230 - Web Frontend Development - Calabar Chamber Project Home Page">
     <meta property="og:image" content="https://gloria-ekpo.github.io/wdd230/chamber/images">
+
+    <!-- favicon -->
     <link rel="icon" href="./images/favicon (1).ico">
+
+    <!-- css normalize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- media query -->
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="./scripts/getdates.js" defer></script>
     <script src="./scripts/darkmode.js" defer></script>
-</head>
+    <script src="./scripts/windchill.js" defer></script>
+    <!-- <script src="./scripts/hamburgermenu.js" defer></script> -->
+</head> 
 <body>
     <header>
         <p><img src="images/rsz_chamber-logo.png" alt="Calabar Chamber Logo" height="160" width="160"></p>
         <h1>Calabar Chamber of Commerce</h1>
     </header>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
+        <button class="menu-hide">X</button><button class="menu-show shoing">&equiv;</button>
+        <ul id="nav-menu">
+            <li><a href="../index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
     <div><button id="dark-mode">DARK</button></div>
-    <main id="home-main">
-        <section id="hero" class="home-section">
+
+        <section id="hero" class="hero-content">
             <h2>Hero Image</h2>
-            <img src="./images/Calabar hero image.jpg" alt="Calabar hero image">
-            <button>Call to Action</button>
+            <img src="./images/wdd230-org.webp" alt="Calabar hero image">
+            <button>Join Chamber</button>
+
+            <picture>
+                <source srcset="./images/wdd230-org.webp" media="(max-width:
+                400px)" class="hero_image">
+      
+                <source srcset="./images/wdd230-org.webp" media="(max-width: 960px)"
+                          class="hero_image">
+                <img src="./images/wdd230-image-large-org.webp"
+                          alt="Three Business personnels sitting around a large desk"
+                          class="hero_image">
+            </picture>
         </section>
+
+    <main>
         <section id="current-events" class="home-section">
             <h2>Current Events</h2>
             <img src="./images/calabar current.jpg" alt="women rights">
@@ -51,8 +78,11 @@
 
         <section id="weather" class="home-section">
             <h2>Weather</h2>
-            <p>The weather is Mostly Cloudy with a temperature of 74 degrees fahrenheit.
-            </p>
+            <img id="weatheric" src="#">
+            <p>Temperature: <span id="temperature">40</span>°F</p>
+            <p>Wind Speed: <span id="windspeed">10</span> mph</p>
+            <p>Wind Chill: <span id="windchill"></span>°F</p>
+
         </section>
 
         <div id="spotlight" class="home-section">

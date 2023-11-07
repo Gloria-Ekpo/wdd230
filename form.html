@@ -15,7 +15,7 @@
     <link rel="icon" href="images/favicon.ico">
 
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="./styles/form.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
@@ -24,11 +24,7 @@
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburger-menu.js" defer></script>
     <script src="scripts/site.visit.js" defer></script>
-    <script src="scripts/site.visit.js" defer></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Caveat&family=Inter:wght@300&family=Libre+Baskerville&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
 </head>
 
 <body>
@@ -50,41 +46,33 @@
     </ul>
   </nav>
 
-  <main>
-    <div class="hero">
-      <picture>
-        <source media="(max-width: 900px)" srcset="images/mount-timpanogos-temple-small.webp">
-        <source media="(max-width: 1200px)" srcset="images/mount-timpanogos-temple-medium.webp">
-        <img src="images/mount-timpanogos-temple-large.webp">
-      </picture>
-    <h2>Aba Nigerian Temple</h2>
-    </div>
-    <h2>WDD 230: Web Frontend Development</h2>
-    <hr>
-  
-  <section class="card">
-    <h3>Learning Activities</h3>
-    <ul>
-        <li>01:<a href="lesson01/holygrail.html">Holy Grail Layout</a></li>
-        <li>02:<a href="lesson2/design.html">Media Query</a> | <a href="./lesson2/design-principles.html">Design Principles</a></li>
-        <li>03:<a href="./lesson03/index.html">The Chamber of Commerce Site Plan</a></li>
-        <li>04: <a href="lesson04/psuedo.html">Psuedo</a> | <a href="#"></a>The Chamber of Commerce</li>
-        <li>05:<a href="chamber/lesson05/bom.html">Scripture</a></li>
-        <li>07: <a href="./lesson03/lazyload.html">Lazy Loading</a></li>
-        <li>08: <a href="lesson08/tablebuild.html"> In-Class Table Build Examples</a> | <a href="form.html">Form Example</a> </li>
-    </ul>
-  </section>
-
-  <section class="information">
-    <h3>Information</h3>
-
-    <p>Rexburg, Idaho</p>
-    <p>Weather: 30&deg; Mostly Sunny</p>
-    <p>Visit Count: <span id="visitcount"></span></p>
-  </section>
-
-  <iframe title="Google Map of BYUI" id="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.9948721099563!2d-111.7859655231442!3d43.814465771094966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540b03dc48a5cf%3A0x1e5534d3c38ef412!2sBrigham%20Young%20University-Idaho!5e0!3m2!1sen!2sus!4v1695765009838!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</main>
+ <main id="form-main">
+  <form method="get" action="record.html">
+    <span id="message"></span>
+    <fieldset>
+      <label>Username: <input id="username" name="username" type="text" required></label>
+      <label>Password: <input id="password" name="password" type="password" required></label>
+      <label>Confirm Password: <input id="confirm" name="confirm" type="password" required></label>
+      <label>BYUI Email: <input id="email" name="email" type="email" required pattern="[A-Za-z]+@byui\.edu$"
+          title="Please enter a valid e-mail address."></label>
+      <label id="labelrating">Page Rating: <span id="currentrating">1</span><input id="rating" name="rating" type="range" min="1"
+          max="10" value="1" step="1" list="rangevalues"></label>
+      <datalist id="rangevalues">
+        <option value="1">A</option>
+        <option value="2">B</option>
+        <option value="3">C</option>
+        <option value="4">D</option>
+        <option value="5">E</option>
+        <option value="6">F</option>
+        <option value="7">G</option>
+        <option value="8">H</option>
+        <option value="9">I</option>
+        <option value="10">J</option>
+      </datalist>
+      <button id="submit" type="submit">Go And DO!</button>
+    </fieldset>
+  </form>
+ </main>
 
   <footer>
     <p>&copy; <span id="currentyear"></span> Gloria Ekpo, Nigeria</p> 

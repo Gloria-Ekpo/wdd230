@@ -1,0 +1,18 @@
+{
+    "name": "Gloria", 
+    "moveInDate": "2022/08/1",
+    "familySize":4,
+    "visited": false,
+    "members": [
+        {
+            "name": "Ekpo",
+            "gender": "F",
+            "birthdate": "2002/09/02"
+        },
+        {
+            "name": "Ekpo",
+            "gender": "F",
+            "birthdate": "1996/10/03"
+        }
+    ]
+}

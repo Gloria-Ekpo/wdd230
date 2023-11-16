@@ -1,0 +1,62 @@
+{"members":[
+    {
+        "name":"Ctdstyles Fashion",
+        "address":"No 72 Edim Ottop street Calabar",
+        "phone": "+234-813-209-5616",
+        "websiteURL": "http://www.ctdstyles.com/",
+        "image": "images/ctdstyles-fashion-designing-company.jpg",
+        "membershipLevel": "Bronze"
+    }, 
+    
+    {
+        "name":"Example Name",
+        "address":"123 Main Street, Rexburg, ID 83440",
+        "phone": "208-123-1234",
+        "websiteURL": "images/example.jpg",
+        "image": "image.jpeg",
+        "membershipLevel": "Bronze"
+    }, 
+    {
+        "name":"Example Name",
+        "address":"123 Main Street, Rexburg, ID 83440",
+        "phone": "208-123-1234",
+        "websiteURL": "images/example.jpg",
+        "image": "image.jpeg",
+        "membershipLevel": "Bronze"
+    }, 
+    {
+        "name":"Example Name",
+        "address":"123 Main Street, Rexburg, ID 83440",
+        "phone": "208-123-1234",
+        "websiteURL": "images/example.jpg",
+        "image": "image.jpeg",
+        "membershipLevel": "Bronze"
+    }, 
+    {
+        "name":"Example Name",
+        "address":"123 Main Street, Rexburg, ID 83440",
+        "phone": "208-123-1234",
+        "websiteURL": "images/example.jpg",
+        "image": "image.jpeg",
+        "membershipLevel": "Bronze"
+    }, 
+    {
+        "name":"Example Name",
+        "address":"123 Main Street, Rexburg, ID 83440",
+        "phone": "208-123-1234",
+        "websiteURL": "images/example.jpg",
+        "image": "image.jpeg",
+        "membershipLevel": "Bronze"
+    }, 
+    {
+        "name":"Example Name",
+        "address":"123 Main Street, Rexburg, ID 83440",
+        "phone": "208-123-1234",
+        "websiteURL": "images/example.jpg",
+        "image": "image.jpeg",
+        "membershipLevel": "Bronze"
+    }
+]
+}
+
+

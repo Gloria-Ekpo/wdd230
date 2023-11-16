@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calabar Chamber of Commerce</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development - Calabar Chamber Project Home Page">
+    <meta name="author" content="Gloria Ekpo">
+
+    <meta property="og:url" content="https://gloria-ekpo.github.io/wdd230/chamber/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="WDD 230 - Calabar Chamber of Commerce">
+    <meta property="og:description"
+        content="WDD 230 - Web Frontend Development - Calabar Chamber Project Home Page">
+    <meta property="og:image" content="https://gloria-ekpo.github.io/wdd230/chamber/images">
+
+    <!-- favicon -->
+    <link rel="icon" href="./images/favicon (1).ico">
+
+    <!-- css normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- media query -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="./scripts/getdates.js" defer></script>
+    <script src="./scripts/darkmode.js" defer></script>
+    <script src="./scripts/hamburger-menu.js" defer></script>
+    <script src="../chamber/scripts/directory.js" defer></script>
+</head> 
+<body>
+    <header>
+        <p><img src="images/rsz_chamber-logo.png" alt="Calabar Chamber Logo" height="160" width="160"></p>
+        <h1>Calabar Chamber of Commerce</h1>
+    </header>
+    <nav>
+        <button id="nav-button"></button>
+        <ul id="nav-menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../chamber/discover.html">Discover</a></li>
+            <li><a href="../chamber/directory.html">Directory</a></li>
+            <li><a href="../chamber/join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <div><button id='dark-mode'>DARK</button></div>
+    <main class="directory-main">
+        <div id='directory-selector'>
+          <button id="directory-grid" class="active">GRID</button>
+          <button id="directory-list">LIST</button></div>
+        <div id='directory-data' class='directory-cards'>
+        </div>
+        </main>
+        <hr>
+        <div class="footer-logo">
+            <p><img src="./images/rsz_chamber-logo.png" alt="Calabar Chamber Logo" height="160" width="160"></p>
+        </div>
+        <div class="footer-contact">
+            <p>Calabar Chamber of Commerce</p>
+            <p>No. 1 Marian Road Calabar </p>
+            <p><a href="#">info@calabarchamber.org</a></p>
+            <p>+2348170055985</p>
+        </div>
+        <hr>
+        <div class="footer-base">
+            <p>&copy;<span id="currentyear"></span> Gloria Ekpo | Chamber Project WDD 230 | Last Modified: <span id="lastmodified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

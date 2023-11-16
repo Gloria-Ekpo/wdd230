@@ -1,0 +1,12 @@
+{
+    "lessons": [
+      {
+        "lesson": "02",
+        "links": [
+          {
+            "url":"lesson02/mediaquery.html",
+            "title":"Media Queries"
+          },
+]
+}
+      

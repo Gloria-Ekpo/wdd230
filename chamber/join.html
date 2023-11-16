@@ -24,7 +24,8 @@
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburger-menu.js" defer></script>
     <script src="scripts/site.visit.js" defer></script>
-    <script src="scripts/site.visit.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+    
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,7 +41,7 @@
   </header> 
 
   <nav>
-    <button id="nav-button"></button><button class="menu-show showing">&equiv;</button>
+    <button class="menu-hide">&otimes;</button><button class="menu-show showing">&equiv;</button>
     <ul class="navigation">
         <li><a href="active" href="#">Home</a></li>
         <li><a href="lesson03/index.html">Site Plan</a></li>
@@ -49,43 +50,31 @@
         <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3.7?lang=eng" target="_blank">Scripture</a></li>
     </ul>
   </nav>
+  <div><button id='dark-mode'>DARK</button></div>
+    <main id="join-main">
+        <section class="join">
+            <div>
+                <form method="GET" action="thankyou.html">
+                    <label class="myinput">First Name*<input id="fname" type="text" name="fname" required></label>
+                    <label class="myinput">Last Name*<input type="text" name="lname" id="lname" required></label>
+                    <label class="myinput">Title<input type="text" name="title" pattern="[A-Za-z\s\-]{7,}"></label>
+                    <label class="myinput">Email*<input type="email" name="email" required placeholder="example@mymail.com"></label>
+                    <label class="myinput">Cell Phone*<input type="tel" name="cellphone" required></label>
+                    <label class="myinput">Business Name*<input type="text" name="bizname" required></label>
+                    <h3>Membership Level</h3>
+                    <label class="myradio"><input type="radio" name="level" value="nonprofit">Non-Profit</label>
+                    <label class="myradio"><input type="radio" name="level" value="bronze">Bronze</label>
+                    <label class="myradio"><input type="radio" name="level" value="silver">Silver</label>
+                    <label class="myradio"><input type="radio" name="level" value="gold">Gold</label>
+                    <label class="myinput">Business Description<textarea name="description" cols="40"
+                            rows="5"></textarea></label>
+                    <input id="currentdate" type="hidden" name="currentdate" value="">
+                    <button class="mysubmit">Join the Chamber!</button>
+                </form>
+            </div>
+            
 
-  <main>
-    <div class="hero">
-      <picture>
-        <source media="(max-width: 900px)" srcset="images/mount-timpanogos-temple-small.webp">
-        <source media="(max-width: 1200px)" srcset="images/mount-timpanogos-temple-medium.webp">
-        <img src="images/mount-timpanogos-temple-large.webp">
-      </picture>
-    <h2>Aba Nigerian Temple</h2>
-    </div>
-    <h2>WDD 230: Web Frontend Development</h2>
-    <hr>
   
-  <section class="card">
-    <h3>Learning Activities</h3>
-    <ul>
-        <li>01:<a href="lesson01/holygrail.html">Holy Grail Layout</a></li>
-        <li>02:<a href="lesson2/design.html">Media Query</a> | <a href="./lesson2/design-principles.html">Design Principles</a></li>
-        <li>03:<a href="./lesson03/index.html">The Chamber of Commerce Site Plan</a></li>
-        <li>04: <a href="lesson04/psuedo.html">Psuedo</a> | <a href="#"></a>The Chamber of Commerce</li>
-        <li>05:<a href="chamber/lesson05/bom.html">Scripture</a></li>
-        <li>07: <a href="./lesson03/lazyload.html">Lazy Loading</a></li>
-        <li>08: <a href="lesson08/tablebuild.html"> In-Class Table Build Examples</a> | <a href="form.html">Form Example</a> </li>
-        <li>09: <a href="lesson09/new-ward-members.json">JSON</a> | <a href="lesson09/prophets.html">Prophet Example </a> </li>
-    </ul>
-  </section>
-
-  <section class="information">
-    <h3>Information</h3>
-
-    <p>Rexburg, Idaho</p>
-    <p>Weather: 30&deg; Mostly Sunny</p>
-    <p>Visit Count: <span id="visitcount"></span></p>
-  </section>
-
-  <iframe title="Google Map of BYUI" id="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.9948721099563!2d-111.7859655231442!3d43.814465771094966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540b03dc48a5cf%3A0x1e5534d3c38ef412!2sBrigham%20Young%20University-Idaho!5e0!3m2!1sen!2sus!4v1695765009838!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</main>
 
   <footer>
     <p>&copy; <span id="currentyear"></span> Gloria Ekpo, Nigeria</p> 

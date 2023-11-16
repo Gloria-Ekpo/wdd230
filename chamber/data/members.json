@@ -1,4 +1,5 @@
-{"members":[
+{
+    "members":[
     {
         "name":"Ctdstyles Fashion",
         "address":"No 72 Edim Ottop street Calabar",
@@ -9,54 +10,54 @@
     }, 
     
     {
-        "name":"Example Name",
-        "address":"123 Main Street, Rexburg, ID 83440",
-        "phone": "208-123-1234",
-        "websiteURL": "images/example.jpg",
-        "image": "image.jpeg",
+        "name":"Umano Graphics",
+        "address":"Ixora Suites, 200 Palm Street, Calabar",
+        "phone": "08038158125",
+        "websiteURL": "https://www.umanographics.com.ng/",
+        "image": "images/umano-graphics.jpg",
+        "membershipLevel": "Gold"
+    }, 
+    {
+        "name":"National Population Commission",
+        "address":"Club Rd, Naval Base",
+        "phone": "+234 906 699 6262",
+        "websiteURL": "https://nationalpopulation.gov.ng/",
+        "image": "images/national-population.jpg",
         "membershipLevel": "Bronze"
     }, 
     {
-        "name":"Example Name",
-        "address":"123 Main Street, Rexburg, ID 83440",
-        "phone": "208-123-1234",
-        "websiteURL": "images/example.jpg",
-        "image": "image.jpeg",
+        "name":"Unical Matters",
+        "address":"Unical Matters",
+        "phone": "07087175164",
+        "websiteURL": "http://www.unicalmatters.com/",
+        "image": "images/unical-matters.jpg",
         "membershipLevel": "Bronze"
     }, 
     {
-        "name":"Example Name",
-        "address":"123 Main Street, Rexburg, ID 83440",
+        "name":"Licity Resources",
+        "address":"Car Park Extension",
         "phone": "208-123-1234",
-        "websiteURL": "images/example.jpg",
-        "image": "image.jpeg",
+        "websiteURL": "https://www.businesslist.com.ng/listings/https/www.licityresources@blogspot.com",
+        "image": "images/licity-resources.jpg",
+        "membershipLevel": "Gold"
+    }, 
+    {
+        "name":"DHL INTL",
+        "address":"55 Ndidem Usang Iso Rd",
+        "phone": "+234 803 907 7000",
+        "websiteURL": "http://www.dhl.com.ng/",
+        "image": "images/dhl-intl-nigeria-ltd.png",
         "membershipLevel": "Bronze"
     }, 
     {
-        "name":"Example Name",
+        "name":"Glo Calabar",
         "address":"123 Main Street, Rexburg, ID 83440",
-        "phone": "208-123-1234",
-        "websiteURL": "images/example.jpg",
-        "image": "image.jpeg",
-        "membershipLevel": "Bronze"
-    }, 
-    {
-        "name":"Example Name",
-        "address":"123 Main Street, Rexburg, ID 83440",
-        "phone": "208-123-1234",
-        "websiteURL": "images/example.jpg",
-        "image": "image.jpeg",
-        "membershipLevel": "Bronze"
-    }, 
-    {
-        "name":"Example Name",
-        "address":"123 Main Street, Rexburg, ID 83440",
-        "phone": "208-123-1234",
-        "websiteURL": "images/example.jpg",
-        "image": "image.jpeg",
+        "phone": "+234 805 557 3108",
+        "websiteURL": "http://www.gloworld.com/",
+        "image": "images/glo-office-calabar.jpg",
         "membershipLevel": "Bronze"
     }
-]
+    ]
 }
 
 

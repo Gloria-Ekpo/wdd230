@@ -4,29 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Gloria Ekpo" />
-    <meta name="description" content="WDD 230 - Web Frontend Development - Gloria Ekpo course assignment portal"  />
+    <meta name="description" 
+    content="WDD 230 - Web Frontend Development - Gloria Ekpo course assignment portal"  />
 
-    <meta property="og:url" content="https://gloria-ekpo.github.io/wdd230/index.html" />
+    <meta property="og:url" 
+    content="https://gloria-ekpo.github.io/wdd230/index.html" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Gloria Ekpo - WDD 230 - Web Frontend Development" />
-    <meta property="og:description" content="WDD 230 - Web Frontend Development - Gloria Ekpo course assignment portal" />
-    <meta property="og:image" content="https://www.bing.com/images/search?view=detailV2&ccid=MjNNhHOU&id=B14DF09874891CD6C5178AC5D635415E241594E2&thid=OIP.MjNNhHOUmejSzxgDx60jvQHaEr&mediaurl=https%3a%2f%2frnn.ng%2fwp-content%2fuploads%2f2021%2f03%2fCalabar.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.32334d84739499e8d2cf1803c7ad23bd%3frik%3d4pQVJF5BNdbFig%26pid%3dImgRaw%26r%3d0&exph=648&expw=1024&q=Nigeria%2c+calabar&simid=607999840168711036&FORM=IRPRST&ck=2DCA64278C8BC9F0989D13C19CD55379&selectedIndex=22&ajaxhist=0&ajaxserp=0" />
+    <meta property="og:title" 
+    content="Gloria Ekpo - WDD 230 - Web Frontend Development" />
+    <meta property="og:description" 
+    content="WDD 230 - Web Frontend Development - Gloria Ekpo course assignment portal" />
+    <meta property="og:image" 
+    content="https://www.bing.com/images/search?view=detailV2&ccid=MjNNhHOU&id=B14DF09874891CD6C5178AC5D635415E241594E2&thid=OIP.MjNNhHOUmejSzxgDx60jvQHaEr&mediaurl=https%3a%2f%2frnn.ng%2fwp-content%2fuploads%2f2021%2f03%2fCalabar.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.32334d84739499e8d2cf1803c7ad23bd%3frik%3d4pQVJF5BNdbFig%26pid%3dImgRaw%26r%3d0&exph=648&expw=1024&q=Nigeria%2c+calabar&simid=607999840168711036&FORM=IRPRST&ck=2DCA64278C8BC9F0989D13C19CD55379&selectedIndex=22&ajaxhist=0&ajaxserp=0" />
     
     <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    
 
     <title>Gloria Ekpo - WDD 230 - Web Frontend Development</title>
 
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburger-menu.js" defer></script>
     <script src="scripts/site.visit.js" defer></script>
-    <script src="scripts/site.visit.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Caveat&family=Inter:wght@300&family=Libre+Baskerville&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
@@ -34,13 +40,14 @@
 <body>
   <header>
     <section>
-    <img src="images/IMG_4846.jpeg" alt="Profile image">
+    <img src="images/IMG_4846.webp" height="180" width="180" alt="my-image">
     <h1>Gloria Ekpo</h1>
     </section>
   </header> 
 
   <nav>
-    <button id="nav-button"></button><button class="menu-show showing">&equiv;</button>
+    <button class="menu-hide">X</button>
+    <button class="menu-show showing">&equiv;</button>
     <ul class="navigation">
         <li><a href="active" href="#">Home</a></li>
         <li><a href="lesson03/index.html">Site Plan</a></li>
@@ -57,18 +64,20 @@
         <source media="(max-width: 1200px)" srcset="images/mount-timpanogos-temple-medium.webp">
         <img src="images/mount-timpanogos-temple-large.webp">
       </picture>
+      <div class="herolabel">
     <h2>Aba Nigerian Temple</h2>
     </div>
+  </div>
     <h2>WDD 230: Web Frontend Development</h2>
     <hr>
   
-  <section class="card">
+  <section class="card" id="learning">
     <h3>Learning Activities</h3>
     <ul>
         <li>01:<a href="lesson01/holygrail.html">Holy Grail Layout</a></li>
-        <li>02:<a href="lesson2/design.html">Media Query</a> | <a href="./lesson2/design-principles.html">Design Principles</a></li>
+        <li>02:<a href="lesson2/design.html">Design Principles Exercise</a> | <a href="./lesson2/design-principles.html">Design Principles</a></li>
         <li>03:<a href="./lesson03/index.html">The Chamber of Commerce Site Plan</a></li>
-        <li>04: <a href="lesson04/psuedo.html">Psuedo</a> | <a href="#"></a>The Chamber of Commerce</li>
+        <li>04: <a href="lesson04/psuedo.html">Psuedo</a> | <a href="chamber/index.html"></a>The Chamber of Commerce</li>
         <li>05:<a href="chamber/lesson05/bom.html">Scripture</a></li>
         <li>07: <a href="./lesson03/lazyload.html">Lazy Loading</a></li>
         <li>08: <a href="lesson08/tablebuild.html"> In-Class Table Build Examples</a> | <a href="form.html">Form Example</a> </li>
@@ -76,11 +85,12 @@
     </ul>
   </section>
 
-  <section class="information">
+  <section class="card" id="information">
     <h3>Information</h3>
-
-    <p>Rexburg, Idaho</p>
-    <p>Weather: 30&deg; Mostly Sunny</p>
+    <p>Calabar, Nigeria</p>
+    <p><img id="weather-icon" src="" alt="weather icon" /></p>
+    <p id="weather-desc"></p>
+    <p id="weather-temp"></p>
     <p>Visit Count: <span id="visitcount"></span></p>
   </section>
 

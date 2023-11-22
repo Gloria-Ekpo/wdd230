@@ -2,19 +2,9 @@
 
 img{
     height: 200px;
+    border-style: none;
 }
 
-.navigation {
-    list-style: none; 
-    text-decoration: none;
-    display: flex;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    font-size: 1.5rem;
-    padding-top: inherit;
-    border-radius: 5px;
-}
 
 
 body {
@@ -71,21 +61,20 @@ h3 {
 }
 
 header {
-    display: flex;
+    display: block;
     background-color: #CDB4DB;
     padding-top: 30px;
     border-radius: 5px;
-    justify-content: center;
-    align-items: center;
 }
 img{
     border-radius: 10px;
 }
 
 nav ul{
+    padding-inline-start: 0px;
+    box-shadow: 3px 3px rgb(0, 0, 53);
     display: flex;
     flex-direction: column;
-    justify-content: center;
 } 
 ul li a:hover{
     text-decoration: underline;
@@ -126,7 +115,6 @@ nav ul li {
     list-style-type: none;
     display: block;
     width: 100%;
-    text-align: center;
 } 
 nav ul li a{
     text-decoration: none;
@@ -144,10 +132,7 @@ nav ul li a:hover{
 .active{
     background-color:  #AC8EBD;    
 }
-iframe{
-    width:90%;
-    border-radius: 10px;
-}
+
 
 #home-main h2{
     text-align: center;    
@@ -191,6 +176,7 @@ ul li a {
 #google-map{
     width: 90%;
     padding: 1rem;
+    width: 100%;
 } 
 
 /** Hamburger Menu Stuff **/
@@ -238,8 +224,9 @@ ul li a {
 .hero img{width:100%;}
 
 
-
-
+#not-found-main{
+    text-align: center;
+}
 
 
 

@@ -18,10 +18,10 @@
     content="https://www.bing.com/images/search?view=detailV2&ccid=MjNNhHOU&id=B14DF09874891CD6C5178AC5D635415E241594E2&thid=OIP.MjNNhHOUmejSzxgDx60jvQHaEr&mediaurl=https%3a%2f%2frnn.ng%2fwp-content%2fuploads%2f2021%2f03%2fCalabar.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.32334d84739499e8d2cf1803c7ad23bd%3frik%3d4pQVJF5BNdbFig%26pid%3dImgRaw%26r%3d0&exph=648&expw=1024&q=Nigeria%2c+calabar&simid=607999840168711036&FORM=IRPRST&ck=2DCA64278C8BC9F0989D13C19CD55379&selectedIndex=22&ajaxhist=0&ajaxserp=0" />
     
     <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
 
     <link rel="stylesheet" href="styles/base.css">
-    <!-- <link rel="stylesheet" href="styles/normalize.css"> -->
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/larger.css">
     
 
@@ -46,9 +46,9 @@
   </header> 
 
   <nav>
-    <button class="menu-hide">X</button>
+    <button class="menu-hide">&otimes;</button>
     <button class="menu-show showing">&equiv;</button>
-    <ul class="navigation">
+    <ul id="nav-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="lesson03/index.html">Site Plan</a></li>
         <li><a href="chamber/index.html">Chamber</a></li>
@@ -57,7 +57,7 @@
     </ul>
   </nav>
 
-  <main>
+  <main id="home-main">
     <div class="hero">
       <picture>
         <source media="(max-width: 560px)" srcset="images/temple-small.webp">

@@ -3,22 +3,17 @@ const bodyelt = document.querySelector("body");
 
 darkmode.addEventListener('click',()=>{
     if (darkmode.textContent == 'DARK' ){
-        document.documentElement.style.setProperty('--text-color', '#2d2248');        
+        document.documentElement.style.setProperty('--text-color', 'rgb(249, 245, 245)');        
         document.documentElement.style.setProperty('--background-color', 'black');    
-        document.documentElement.style.setProperty('--hover-background-color', 'black');    
-//         document.documentElement.style.setProperty('--hover-color', '#dda15e');                
+            
         bodyelt.style.backgroundColor = 'black';
         darkmode.textContent = 'LIGHT'
     }
     else{
         document.documentElement.style.setProperty('--text-color', 'black');        
-        document.documentElement.style.setProperty('--background-color', '#2d2248');        
-//         document.documentElement.style.setProperty('--hover-background-color', '#bc6c25');    
-//         document.documentElement.style.setProperty('--hover-color', 'black');        
-        bodyelt.style.backgroundColor = '#fefae0';
+        document.documentElement.style.setProperty('--background-color', 'rgb(249, 245, 245)');        
+        
+        bodyelt.style.backgroundColor = 'white';
         darkmode.textContent = 'DARK'
     }
 })
-
-
-

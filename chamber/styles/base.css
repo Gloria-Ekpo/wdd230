@@ -192,6 +192,16 @@ nav ul li a:hover{
     text-align: center;
 }
 
+.menu-hide, .menu-show{
+    display: none;
+    background-color: black;
+    color: white;
+    border: 2px solid rgb(20, 13, 13);
+    margin: .5rem 0 0 .5rem;
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+}
 
 #weather {
     border: 1px solid black;

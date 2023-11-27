@@ -245,28 +245,29 @@ nav ul li a:hover{
 .footer-contact a:hover {
     background-color: white;
 }
-/* Discover Page Styles */
 
+
+/* Discover Page Styles */
 #discover-main{
     padding-left: 10px;
 }
-
 #discover-images{
     text-align: center;
 }
-
 #discover-images img{
     width: 100%;
-    border: 5px solid var(--hover-background-color);
+    /* border: 5px solid var(--hover-background-color); */
 }
 
-#discover-demographics, #discover-message, #discover-events{
+.discover-content, #discover-message{
     border: 1px solid black;    
     padding: 1rem;
     margin: 1rem 0;
-    box-shadow: 5px 5px 5px var(--hover-background-color)
+    box-shadow: 3px 3px 3px var(--hover-background-color)
 }
-
+#discover-images h3{
+    text-align: center;
+}
 /*** Join page styles ***/
 
 .join{

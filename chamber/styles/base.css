@@ -238,7 +238,13 @@ nav ul li a:hover{
     text-align: center;
 }
 
-
+.footer-contact a{
+    color: red;
+    
+}
+.footer-contact a:hover {
+    background-color: white;
+}
 /* Discover Page Styles */
 
 #discover-main{

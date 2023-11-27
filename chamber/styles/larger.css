@@ -35,7 +35,7 @@
     }
 
     .spotlight-card {
-        flex-basis: 1;
+        flex: 1;
     }
     #spotlight-1, #spotlight-2, #spotlight-3 {
         flex-direction: row;

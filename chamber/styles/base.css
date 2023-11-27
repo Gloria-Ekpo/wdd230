@@ -18,20 +18,17 @@ body{
     text-align: center;
 
 }
-.button-Container button{
-    position: absolute;
-  background-color: #6b968af1;
-  height: 50px;
-  font-size: 20px;
-  /* border-radius: 5%; */
-  top: auto;
+.button-Container{
+  position: absolute;
   bottom: 50%;
-  margin: 1rem 0;
-  bottom: 70px;
-  right: 50%; /* Adjust the distance from the right */
+  top: auto;
+  right: 30%;
+  font-size: 20px;
+  border-radius: 5px;
   z-index: 1; /* Set a higher z-index to ensure it appears above other elements */
 
 }
+
 button{
     color: var(--text-color);
     background-color: var(--background-color);
@@ -87,6 +84,7 @@ header h1{
 .home-section img {
     border-radius: 10px;
 }
+
 
 footer{
     /* display: grid; */
@@ -469,6 +467,6 @@ nav ul li a:hover{
 @media (min-width: 1200px) {
     .large {
         display: block;
-        /* Display for large viewports */
     }
+    
 }

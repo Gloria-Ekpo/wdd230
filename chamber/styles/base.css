@@ -35,6 +35,10 @@ button{
     border-radius: 5px;
     cursor: pointer;
 }
+button:hover {
+    background-color: var(--hover-background-color);
+    color: var(--hover-color);
+}
 
 .overlay {
     position: absolute;
@@ -219,6 +223,10 @@ nav ul li a:hover{
 
 #spotlight-3 {
     margin: 5px;
+}
+.spotlight-card p {
+    line-height: 25px;
+    text-align: left;
 }
 .spotlight-card {
     border-radius: 5px;

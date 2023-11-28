@@ -14,16 +14,15 @@
     
     <link rel="icon" href="images/favicon.ico">
 
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
 
     <title>Gloria Ekpo - WDD 230 - Web Frontend Development</title>
 
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburger-menu.js" defer></script>
-    <script src="scripts/site.visit.js" defer></script>
     <script src="scripts/join.js" defer></script>
     
 
@@ -35,7 +34,7 @@
 <body>
   <header>
     <section>
-    <img src="images/IMG_4846.jpeg" alt="Profile image">
+    <img src="./images/rsz_chamber-logo.png" alt="Profile image">
     <h1>Gloria Ekpo</h1>
     </section>
   </header> 
@@ -43,11 +42,10 @@
   <nav>
     <button class="menu-hide">&otimes;</button><button class="menu-show showing">&equiv;</button>
     <ul class="navigation">
-        <li><a href="active" href="#">Home</a></li>
-        <li><a href="lesson03/index.html">Site Plan</a></li>
-        <li><a href="chamber/index.html">Chamber</a></li>
-        <li><a href="https://www.byui.edu/">BYU-Idaho</a></li>
-        <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3.7?lang=eng" target="_blank">Scripture</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="./discover.html">Discover</a></li>
+      <li><a href="./directory.html">Directory</a></li>
+      <li><a href="./join.html">Join</a></li>
     </ul>
   </nav>
   <div><button id='dark-mode'>DARK</button></div>
@@ -68,10 +66,77 @@
                     <label class="myradio"><input type="radio" name="level" value="gold">Gold</label>
                     <label class="myinput">Business Description<textarea name="description" cols="40"
                             rows="5"></textarea></label>
-                    <input id="currentdate" type="hidden" name="currentdate" value="">
+                    <input id="timestamp" type="hidden" name="timestamp" value="" />
+                    
                     <button class="mysubmit">Join the Chamber!</button>
                 </form>
             </div>
+        </section>
+
+        
+      <div class="member-benefits">
+        <h2>Membership Levels Benefits</h2>
+        <h3>NP Membership</h3>
+        <ul>
+          <li>
+            No Fee: As a non-profit, no fee is associated with this membership
+            level.
+          </li>
+          <li>
+            Basic Access to Resources: Access to basic resources and information
+            offered by the organization.
+          </li>
+        </ul>
+        <h3>Bronze Membership</h3>
+        <ul>
+          <li>Cost: $100: Membership at the Bronze level costs $100.</li>
+          <li>
+            Event Discounts: Discounts for attending organization-sponsored
+            events, workshops, or seminars.
+          </li>
+          <li>
+            Basic Advertising Opportunities: Basic advertising or promotional
+            opportunities in the organization's materials.
+          </li>
+        </ul>
+ 
+        <h3>Silver Membership</h3>
+        <ul>
+          <li>Cost: $250: Membership at the Silver level costs $250.</li>
+          <li>
+            Enhanced Event Discounts: Higher discounts for attending events
+            compared to the Bronze level.
+          </li>
+          <li>
+            Enhanced Advertising Opportunities: More prominent advertising space
+            in the organization's materials.
+          </li>
+          <li>
+            Exclusive Training Sessions: Access to exclusive training or
+            educational sessions.
+          </li>
+        </ul>
+ 
+        <h3>Gold Membership</h3>
+        <ul>
+          <li>Cost: $500: Membership at the Gold level costs $500.</li>
+          <li>
+            Premier Event Discounts: The highest discounts for attending events.
+          </li>
+          <li>
+            VIP Access to Special Events: Access to exclusive VIP events or
+            gatherings.
+          </li>
+          <li>
+            Premier Advertising Opportunities: Priority placement for
+            advertising in the organization's materials.
+          </li>
+          <li>
+            Exclusive Training Sessions: Advanced and specialized training
+            sessions tailored for Gold members.
+          </li>
+        </ul>
+      </div>
             
 
   

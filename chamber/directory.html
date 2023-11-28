@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calabar Chamber of Commerce</title>
-    <meta name="description" content="WDD 230 - Web Frontend Development - Calabar Chamber Project Home Page">
+    <title>Directory of Members - Calabar Chamber of Commerce</title>
+    <meta name="description" content="Directory of Members - Calabar Chamber of Commerce">
     <meta name="author" content="Gloria Ekpo">
 
-    <meta property="og:url" content="https://gloria-ekpo.github.io/wdd230/chamber/index.html">
+    <meta property="og:url" content="https://gloria-ekpo.github.io/wdd230/chamber/directory">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="WDD 230 - Calabar Chamber of Commerce">
+    <meta property="og:title" content="Directory of Members - Calabar Chamber of Commerce">
     <meta property="og:description"
-        content="WDD 230 - Web Frontend Development - Calabar Chamber Project Home Page">
-    <meta property="og:image" content="https://gloria-ekpo.github.io/wdd230/chamber/images">
+        content="Directory of Members - Calabar Chamber of Commerce">
+    <meta property="og:image" content="https://gloria-ekpo.github.io/wdd230/chamber/images/favicon.ico">
 
     <!-- favicon -->
     <link rel="icon" href="images/favicon.ico">
@@ -36,16 +36,19 @@
         <h1>Calabar Chamber of Commerce</h1>
     </header>
     <nav>
-        <button id="nav-button"></button>
+        <button class="menu-hide">X</button>
+        <button class="menu-show showing">&equiv;</button>
+
         <ul id="nav-menu">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../chamber/discover.html">Discover</a></li>
-            <li><a href="../chamber/directory.html">Directory</a></li>
-            <li><a href="../chamber/join.html">Join</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
 
     <div><button id='dark-mode'>DARK</button></div>
+    
     <main class="directory-main">
         <div id='directory-selector'>
           <button id="directory-grid" class="active">GRID</button>

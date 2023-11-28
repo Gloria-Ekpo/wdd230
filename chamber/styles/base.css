@@ -416,6 +416,9 @@ nav ul li a:hover{
     padding: .5rem;
     border-radius: 5px;
 }
+.directory-cards .card-button:hover{
+    color: aliceblue;
+}
 
 /* List View */
 

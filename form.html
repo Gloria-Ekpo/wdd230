@@ -4,21 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Gloria Ekpo" />
-    <meta name="description" content="WDD 230 - Web Frontend Development - Gloria Ekpo course assignment portal"  />
+    <meta name="description" content="WDD 230 - Web Frontend Development - Gloria Ekpo course assignment portal - Form Build"  />
 
     <meta property="og:url" content="https://gloria-ekpo.github.io/wdd230/index.html" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Gloria Ekpo - WDD 230 - Web Frontend Development" />
+    <meta property="og:title" content="Gloria Ekpo - WDD 230 - Web Frontend Development Form Build" />
     <meta property="og:description" content="WDD 230 - Web Frontend Development - Gloria Ekpo course assignment portal" />
     <meta property="og:image" content="https://gloria-ekpo.github.io/wdd230/images/favicon.ico"/>
     
     <link rel="icon" href="images/favicon.ico">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"/>
 
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="./styles/form.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+   
     <title>Gloria Ekpo - WDD 230 - Web Frontend Development</title>
 
     <script src="scripts/getdates.js" defer></script>
@@ -30,17 +38,18 @@
 <body>
   <header>
     <section>
-    <img src="images/IMG_4846.jpeg" alt="Profile image">
+    <img src="images/IMG_4846.jpeg" height="180" width="180" alt="Profile image">
     <h1>Gloria Ekpo</h1>
     </section>
   </header> 
 
   <nav>
-    <button class="menu-hide">&otimes;</button><button class="menu-show showing">&equiv;</button>
-    <ul class="navigation">
+    <button class="menu-hide">X</button>
+    <button class="menu-show showing">&equiv;</button>
+    <ul id="nav-menu">
         <li><a href="active" href="#">Home</a></li>
-        <li><a href="lesson03/index.html">Site Plan</a></li>
-        <li><a href="chamber/index.html">Chamber</a></li>
+        <li><a href="./lesson03/chamber-site-plan.html">Site Plan</a></li>
+        <li><a href="./chamber/index.html">Chamber</a></li>
         <li><a href="https://www.byui.edu/">BYU-Idaho</a></li>
         <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3.7?lang=eng" target="_blank">Scripture</a></li>
     </ul>
@@ -55,7 +64,8 @@
       <label>Confirm Password: <input id="confirm" name="confirm" type="password" required></label>
       <label>BYUI Email: <input id="email" name="email" type="email" required pattern="[A-Za-z]+@byui\.edu$"
           title="Please enter a valid e-mail address."></label>
-      <label id="labelrating">Page Rating: <span id="currentrating">1</span><input id="rating" name="rating" type="range" min="1"
+      <label id="labelrating">Page Rating: <span id="currentrating">1</span>
+        <input id="rating" name="rating" type="range" min="1"
           max="10" value="1" step="1" list="rangevalues"></label>
       <datalist id="rangevalues">
         <option value="1">A</option>

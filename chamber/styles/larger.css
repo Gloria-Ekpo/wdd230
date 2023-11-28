@@ -97,6 +97,11 @@
     #meetgreet {
         grid-column: 1/3;
     }
+    #spotlight {
+        grid-column: 1/3;
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 

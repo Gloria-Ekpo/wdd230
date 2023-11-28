@@ -20,6 +20,11 @@
         display: grid;
         grid-template-columns: 1fr 3fr;
     }
+    #spotlight {
+        grid-column: 1/3;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 

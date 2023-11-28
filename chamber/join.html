@@ -1,154 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Gloria Ekpo" />
-    <meta name="description" content="WDD 230 - Web Frontend Development - Gloria Ekpo course assignment portal"  />
+    <meta name="author" content="Gloria Ekpo">
+    <meta name="description" content="WDD 230 - Web Frontend Development - Gloria Ekpo course assignment portal">
 
-    <meta property="og:url" content="https://gloria-ekpo.github.io/wdd230/index.html" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Gloria Ekpo - WDD 230 - Web Frontend Development" />
-    <meta property="og:description" content="WDD 230 - Web Frontend Development - Gloria Ekpo course assignment portal" />
-    <meta property="og:image" content="https://www.bing.com/images/search?view=detailV2&ccid=MjNNhHOU&id=B14DF09874891CD6C5178AC5D635415E241594E2&thid=OIP.MjNNhHOUmejSzxgDx60jvQHaEr&mediaurl=https%3a%2f%2frnn.ng%2fwp-content%2fuploads%2f2021%2f03%2fCalabar.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.32334d84739499e8d2cf1803c7ad23bd%3frik%3d4pQVJF5BNdbFig%26pid%3dImgRaw%26r%3d0&exph=648&expw=1024&q=Nigeria%2c+calabar&simid=607999840168711036&FORM=IRPRST&ck=2DCA64278C8BC9F0989D13C19CD55379&selectedIndex=22&ajaxhist=0&ajaxserp=0" />
-    
-    <link rel="icon" href="images/favicon.ico">
+    <title>Gloria Ekpo - Web Frontend Development Join Page</title>
+
+    <link rel="icon" href="../images/favicon.ico">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    
-
-    <title>Gloria Ekpo - WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/larger.css">
 
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburger-menu.js" defer></script>
     <script src="scripts/join.js" defer></script>
-    
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Caveat&family=Inter:wght@300&family=Libre+Baskerville&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="scripts/darkmode.js" defer></script>
 </head>
 
 <body>
-  <header>
-    <section>
-    <img src="./images/rsz_chamber-logo.png" alt="Profile image">
-    <h1>Gloria Ekpo</h1>
-    </section>
-  </header> 
+    <header>
+        <img src="images/rsz_chamber-logo.png" alt="Website Logo" width="107" height="200">
+        <h1>Welcome to the Join Page!</h1>
+    </header>
 
-  <nav>
-    <button class="menu-hide">&otimes;</button><button class="menu-show showing">&equiv;</button>
-    <ul class="navigation">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="./discover.html">Discover</a></li>
-      <li><a href="./directory.html">Directory</a></li>
-      <li><a href="./join.html">Join</a></li>
-    </ul>
-  </nav>
-  <div><button id='dark-mode'>DARK</button></div>
+    <nav>
+        <button class="menu-hide">X</button>
+        <button class="menu-show showing">&equiv;</button>
+
+        <ul id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <div><button id='dark-mode'>DARK</button></div>
+
     <main id="join-main">
         <section class="join">
             <div>
                 <form method="GET" action="thankyou.html">
-                    <label class="myinput">First Name*<input id="fname" type="text" name="fname" required></label>
-                    <label class="myinput">Last Name*<input type="text" name="lname" id="lname" required></label>
-                    <label class="myinput">Title<input type="text" name="title" pattern="[A-Za-z\s\-]{7,}"></label>
-                    <label class="myinput">Email*<input type="email" name="email" required placeholder="example@mymail.com"></label>
-                    <label class="myinput">Cell Phone*<input type="tel" name="cellphone" required></label>
-                    <label class="myinput">Business Name*<input type="text" name="bizname" required></label>
+                    <label class="myinput">
+                        First Name*<input id="fname" type="text" name="fname" required>
+                    </label>
+                    <label class="myinput">
+                        Last Name*<input type="text" name="lname" id="lname" required>
+                    </label>
+                    <label class="myinput">
+                        Title<input type="text" name="title" pattern="[A-Za-z\s\-]{7,}">
+                    </label>
+                    <label class="myinput">
+                        Email*<input type="email" name="email" required placeholder="example@mymail.com">
+                    </label>
+                    <label class="myinput">
+                        Cell Phone*<input type="tel" name="cellphone" required>
+                    </label>
+                    <label class="myinput">
+                        Business Name*<input type="text" name="bizname" required>
+                    </label>
                     <h3>Membership Level</h3>
                     <label class="myradio"><input type="radio" name="level" value="nonprofit">Non-Profit</label>
                     <label class="myradio"><input type="radio" name="level" value="bronze">Bronze</label>
                     <label class="myradio"><input type="radio" name="level" value="silver">Silver</label>
                     <label class="myradio"><input type="radio" name="level" value="gold">Gold</label>
-                    <label class="myinput">Business Description<textarea name="description" cols="40"
-                            rows="5"></textarea></label>
+                    <label class="myinput">
+                        Business Description<textarea name="description" cols="40" rows="5"></textarea>
+                    </label>
                     <input id="timestamp" type="hidden" name="timestamp" value="" />
-                    
+
                     <button class="mysubmit">Join the Chamber!</button>
                 </form>
             </div>
         </section>
 
-        
-      <div class="member-benefits">
-        <h2>Membership Levels Benefits</h2>
-        <h3>NP Membership</h3>
-        <ul>
-          <li>
-            No Fee: As a non-profit, no fee is associated with this membership
-            level.
-          </li>
-          <li>
-            Basic Access to Resources: Access to basic resources and information
-            offered by the organization.
-          </li>
-        </ul>
-        <h3>Bronze Membership</h3>
-        <ul>
-          <li>Cost: $100: Membership at the Bronze level costs $100.</li>
-          <li>
-            Event Discounts: Discounts for attending organization-sponsored
-            events, workshops, or seminars.
-          </li>
-          <li>
-            Basic Advertising Opportunities: Basic advertising or promotional
-            opportunities in the organization's materials.
-          </li>
-        </ul>
- 
-        <h3>Silver Membership</h3>
-        <ul>
-          <li>Cost: $250: Membership at the Silver level costs $250.</li>
-          <li>
-            Enhanced Event Discounts: Higher discounts for attending events
-            compared to the Bronze level.
-          </li>
-          <li>
-            Enhanced Advertising Opportunities: More prominent advertising space
-            in the organization's materials.
-          </li>
-          <li>
-            Exclusive Training Sessions: Access to exclusive training or
-            educational sessions.
-          </li>
-        </ul>
- 
-        <h3>Gold Membership</h3>
-        <ul>
-          <li>Cost: $500: Membership at the Gold level costs $500.</li>
-          <li>
-            Premier Event Discounts: The highest discounts for attending events.
-          </li>
-          <li>
-            VIP Access to Special Events: Access to exclusive VIP events or
-            gatherings.
-          </li>
-          <li>
-            Premier Advertising Opportunities: Priority placement for
-            advertising in the organization's materials.
-          </li>
-          <li>
-            Exclusive Training Sessions: Advanced and specialized training
-            sessions tailored for Gold members.
-          </li>
-        </ul>
-      </div>
-            
+        <div class="member-benefits">
+            <h2>Membership Levels Benefits</h2>
+            <h3>NP Membership</h3>
+            <ul>
+                <li>
+                    No Fee: As a non-profit, no fee is associated with this membership level.
+                </li>
+                <li>
+                    Basic Access to Resources: Access to basic resources and information offered by the organization.
+                </li>
+            </ul>
+            <h3>Bronze Membership</h3>
+            <ul>
+                <li>Cost: $100: Membership at the Bronze level costs $100.</li>
+                <li>
+                    Event Discounts: Discounts for attending organization-sponsored events, workshops, or seminars.
+                </li>
+                <li>
+                    Basic Advertising Opportunities: Basic advertising or promotional opportunities in the
+                    organization's materials.
+                </li>
+            </ul>
 
-  
+            <h3>Silver Membership</h3>
+            <ul>
+                <li>Cost: $250: Membership at the Silver level costs $250.</li>
+                <li>
+                    Enhanced Event Discounts: Higher discounts for attending events compared to the Bronze level.
+                </li>
+                <li>
+                    Enhanced Advertising Opportunities: More prominent advertising space in the organization's
+                    materials.
+                </li>
+                <li>
+                    Exclusive Training Sessions: Access to exclusive training or educational sessions.
+                </li>
+            </ul>
 
-  <footer>
-    <p>&copy; <span id="currentyear"></span> Gloria Ekpo, Nigeria</p> 
-    <p>Last Modified: <span id="lastmodified"></span></p>
-  </footer>
+            <h3>Gold Membership</h3>
+            <ul>
+                <li>Cost: $500: Membership at the Gold level costs $500.</li>
+                <li>
+                    Premier Event Discounts: The highest discounts for attending events.
+                </li>
+                <li>
+                    VIP Access to Special Events: Access to exclusive VIP events or gatherings.
+                </li>
+                <li>
+                    Premier Advertising Opportunities: Priority placement for advertising in the organization's
+                    materials.
+                </li>
+                <li>
+                    Exclusive Training Sessions: Advanced and specialized training sessions tailored for Gold members.
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <hr>
+        <div class="footer-logo">
+            <p><img src="./images/rsz_chamber-logo.png" alt="Calabar Chamber Logo" height="160" width="160"></p>
+        </div>
+        <div class="footer-contact">
+            <p>Calabar Chamber of Commerce</p>
+            <p>No. 1 Marian Road, Calabar</p>
+            <p><a href="#">info@calabarchamber.org</a></p>
+            <p>+234817005555</p>
+        </div>
+        <hr>
+        <div class="footer-base">
+            <p>&copy;<span id="currentyear"></span> Gloria Ekpo | Chamber Project WDD 230 | Last Modified: <span
+                    id="lastmodified"></span></p>
+        </div>
+    </footer>
 </body>
+
 </html>
-
-
-
-
-

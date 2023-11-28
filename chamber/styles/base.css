@@ -396,18 +396,6 @@ nav ul li a:hover{
     margin: .5rem;
 }
 
-.directory-cards section{
-    text-align: center;
-    border: 2px solid grey;
-    width: 300px;
-    padding: 1rem;
-    margin: .5rem;
-}
-
-
-.directory-cards .gold-member{
-    box-shadow: .5rem .5rem .5rem gold;
-}
 
 .directory-cards .card-button{
     text-decoration: none;
@@ -443,11 +431,6 @@ nav ul li a:hover{
 .directory-list .card-button{
     text-decoration: underline;
     color: black;    
-}
-
-
-.directory-list section:nth-child(odd) {
-    background-color: var(--background-color);
 }
 
 .directory-list section:nth-child(even) {
@@ -489,9 +472,3 @@ nav ul li a:hover{
     /* Hide by default */
 }
 
-@media (min-width: 1200px) {
-    .large {
-        display: block;
-    }
-    
-}

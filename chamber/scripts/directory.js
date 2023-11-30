@@ -32,7 +32,7 @@ const displayMembers = (businesss) => {
    
     let card = document.createElement("section");
     card.innerHTML = `
-    <img src="${business.image}" alt="business names in calabar">
+    <img src="${business.image}" alt="business names in calabar" width="300" height="200">
     <p>${business.name}</p>
     <p>${business.address}</p>
     <p>${business.phone}</p>

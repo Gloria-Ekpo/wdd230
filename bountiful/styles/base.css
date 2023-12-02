@@ -1,0 +1,21 @@
+.banner {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: #00BFFF;
+    color: white;
+  }
+  .banner h1 {
+    font-size: 3em;
+  }
+  .product {
+    width: 250px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  .product img {
+    width: 100%;
+    height: auto;
+  }

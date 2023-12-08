@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful foods</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development - Bountiful Food Home Page">
+    <meta name="author" content="Gloria Ekpo">
+    <!-- social media meta tags for facebook -->
+    <meta property="og:url" content="https://gloria-ekpo.github.io/wdd230/bountiful/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="WDD 230 - Bountiful Foods">
+    <meta property="og:description"
+        content="WDD 230 - Web Frontend Development - Bountiful Project Home Page">
+    <meta property="og:image" content="http">
+
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- css normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- media query -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/drink-count.js defer"></script>
+</head> 
+
+<body>
+    <header>
+        <div class="logo">
+        <img src="./images/Fruit Store Premium Product Logo.png" height="160" width="160" alt="Bountiful Logo" >
+        </div>
+        <nav>
+        <button class="menu-hide">X</button>
+        <button class="menu-show showing">&equiv;</button>
+        <ul id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="order.html">Order</a></li>
+        </ul>
+        </nav>
+        <div class="social-media">
+            <a href="images/facebook.png"><img src="images/facebook.png" alt="Facebook Logo"></a>
+            <a href="images/twitter.png"><img src="images/twitter.png" alt="Twitter Logo"></a>
+            <a href="images/instagram-icon.webp"><img src="images/instagram-icon.webp" alt="Instagram Logo"></a>
+        </div>
+    </header>
+    <main>
+        <!-- Order Drink Form -->
+<form id="order-drink-form" action="order-confirmation.html" method="post">
+    <h2>Order Your Specialty Drink</h2>
+  
+    <label for="first-name">First Name:</label>
+    <input type="text" id="first-name" name="first-name" required>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  
+    <label for="phone-number">Phone Number:</label>
+    <input type="tel" id="phone-number" name="phone-number" required>
+  
+    <label for="fruit1">Fruit 1:</label>
+    <select id="fruit1" name="fruit1">
+      <!-- Options will be populated dynamically -->
+    </select>
+  
+    <label for="fruit2">Fruit 2:</label>
+    <select id="fruit2" name="fruit2">
+      <!-- Options will be populated dynamically -->
+    </select>
+  
+    <label for="fruit3">Fruit 3:</label>
+    <select id="fruit3" name="fruit3">
+      <!-- Options will be populated dynamically -->
+    </select>
+  
+    <label for="special-instructions">Special Instructions:</label>
+    <textarea id="special-instructions" name="special-instructions"></textarea>
+  
+    <p>Payment is received when the drink is picked up.</p>
+  
+    <input type="submit" value="Submit Order">
+  </form>
+  
+    </main>
+
+        
+        
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="./images/Fruit Store Premium Product Logo.png" alt="mylogo" width="70">
+            </div>
+            <div class="footer-contact">
+                <h4>Bountiful Foods</h4>
+                <p>220 S 2nd W <br>Rexburg, ID 83440</p>
+                <p><a href="bountiful@gmail.com">info@BountifulFoods.org</a></p>
+                <p>650-316-0671</p>
+            </div>
+        </div>
+        <div class="footer-base">
+            <p>© <span id="currentyear">2023</span> | Gloria Ekpo | Rexburg, ID | Last Modified <span id="dateModified"></span>
+          </p>
+    
+        </div>
+    </footer>
+</body>
+</html>

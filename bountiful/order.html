@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bountiful foods</title>
-    <meta name="description" content="WDD 230 - Web Frontend Development - Bountiful Food Home Page">
+    <meta name="description" content="WDD 230 - Web Frontend Development - Bountiful Food Order Page">
     <meta name="author" content="Gloria Ekpo">
     <!-- social media meta tags for facebook -->
-    <meta property="og:url" content="https://gloria-ekpo.github.io/wdd230/bountiful/index.html">
+    <meta property="og:url" content="https://gloria-ekpo.github.io/wdd230/bountiful/order.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="WDD 230 - Bountiful Foods">
     <meta property="og:description"
-        content="WDD 230 - Web Frontend Development - Bountiful Project Home Page">
+        content="WDD 230 - Web Frontend Development - Bountiful Project Order Page">
     <meta property="og:image" content="http">
 
     <!-- favicon -->
@@ -50,68 +50,69 @@
             <li><a href="order.html">Order</a></li>
         </ul>
         </nav>
-        <div class="social-media">
-            <a href="images/facebook.png"><img src="images/facebook.png" alt="Facebook Logo"></a>
-            <a href="images/twitter.png"><img src="images/twitter.png" alt="Twitter Logo"></a>
-            <a href="images/instagram-icon.webp"><img src="images/instagram-icon.webp" alt="Instagram Logo"></a>
-        </div>
     </header>
     <main>
-        <!-- Order Drink Form -->
-<form id="order-drink-form" action="order-confirmation.html" method="post">
+    <section class="form-container">
+    <form id="order-drink-form" action="order-confirmation.html" method="get">
     <h2>Order Your Specialty Drink</h2>
   
     <label for="first-name">First Name:</label>
-    <input type="text" id="first-name" name="first-name" required>
+    <input type="text" id="first-name" name="first-name" required><br><br>
   
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+    <input type="email" id="email" name="email" required><br><br>
   
     <label for="phone-number">Phone Number:</label>
-    <input type="tel" id="phone-number" name="phone-number" required>
+    <input type="tel" id="phone-number" name="phone-number" required><br><br>
   
     <label for="fruit1">Fruit 1:</label>
     <select id="fruit1" name="fruit1" class="selections">
-        <option value="" disabled selected>Choose an option</option>
-    </select>
+        <option value="" disabled selected>Select a fruit</option>
+    </select><br>
   
     <label for="fruit2">Fruit 2:</label>
     <select id="fruit2" name="fruit2" class="selections" >
-        <option value="" disabled selected>Choose an option</option>
-    </select>
+        <option value="" disabled selected>Select a fruit</option><br><br>
+    </select><br>
   
     <label for="fruit3">Fruit 3:</label>
     <select id="fruit3" name="fruit3" class="selections">
-        <option value="" disabled selected>Choose an option</option>
-    </select>
+        <option value="" disabled selected>Select a fruit</option><br><br>
+    </select><br>
   
     <label for="special-instructions">Special Instructions:</label>
-    <textarea id="special-instructions" name="special-instructions"></textarea>
+    <textarea id="special-instructions" name="special-instructions"></textarea><br><br>
   
     <p>Payment is received when the drink is picked up.</p>
   
     <input type="submit" value="Submit Order">
-  </form>
-  
-    </main>
+    </form>
 
-        
-        
+    <img class="fruit-image" src="./images/Fruit-Smoothie.webp" alt="Fruits">
+    </section>
     
+    </main>
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
                 <img src="./images/Fruit Store Premium Product Logo.png" alt="mylogo" width="70">
             </div>
             <div class="footer-contact">
-                <h4>Bountiful Foods</h4>
-                <p>220 S 2nd W <br>Rexburg, ID 83440</p>
+                                                          <h4>Bountiful Foods</h4>
+                <p>6669 Peregrine PI<br>Carlsbad, CA 92011</p>
                 <p><a href="bountiful@gmail.com">info@BountifulFoods.org</a></p>
                 <p>650-316-0671</p>
+                <p>Resources:
+                  <a href="https://www.fruityvice.com/">www.fruityvice.com</a>, <a href="https://openweathermap.org/">openweathermap.org</a>
             </div>
+            <div class="social-media">
+              <a href="images/facebook.png"><img src="images/facebook.png" alt="Facebook Logo"></a>
+              <a href="images/twitter.png"><img src="images/twitter.png" alt="Twitter Logo"></a>
+              <a href="images/instagram-icon.webp"><img src="images/instagram-icon.webp" alt="Instagram Logo"></a>
+          </div>
         </div>
         <div class="footer-base">
-            <p>© <span id="currentyear">2023</span> | Gloria Ekpo | Rexburg, ID | Last Modified <span id="dateModified"></span>
+            <p>© <span id="currentyear">2023</span> | Gloria Ekpo | Final Project WDD 230 | Last Modified <span id="dateModified"></span>
           </p>
     
         </div>

@@ -1,3 +1,29 @@
+/* CSS for large screens */
+@media (min-width: 1200px) {
+  .menu-show, .menu-hide, .menu-show.showing, .menu-hide.showing{
+    display: none;
+} 
+  #nav-menu {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  
+  #nav-menu{
+    display: flex;
+}
+#nav-menu a{
+  padding: 10px 15px;
+  font-size: 1.2em;
+}
+
+.about-content p {
+  font-size: 1.5em; 
+}
+
+
+}
+
 #weather {
     display: grid;
     grid-template-columns: repeat(3,1fr);

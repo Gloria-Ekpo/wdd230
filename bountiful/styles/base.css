@@ -267,12 +267,119 @@ footer a:hover {
   text-align: center;
 }
 
-/* 
-@media only screen and (max-width: 767px) {
+
+/* about section */
+.about-section {
+  padding: 30px;
+  text-align: center;
+}
+.about-section p {
+  font-weight: 300;
+  font-size: 24px;
+  margin: 20px 0;
+}
+.smoothie-image {
+  float: left; 
+  width: 300px; 
+  height: 300px; 
+  margin: 10px; 
+}
+
+/* mission section */
+.mission-section {
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) ;
+  border-radius: 10px;
+}
+.mission-section h2 {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  margin: 0;
+}
+
+.mission-section p {
+  font-weight: 300;
+  font-size: 18px;
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+.mission-section ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.mission-section li {
+  width: 25%;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.mission-section li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  color: red;
+}
+
+/* products section */
+.products-section {
+  padding: 20px;
+  margin: 0 auto;
+}
+.products-section h2 {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  margin: 0;
+}
+
+.products-section p {
+  font-weight: 300;
+  font-size: 18px;
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+/* map section */
+.map-section {
+  padding: 20px;
+}
+.map-section h2 {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  margin: 0;
+}
+
+.map-section p {
+  font-weight: 300;
+  font-size: 18px;
+  margin: 20px 0;
+  text-align: center;
+  line-height: 1.5;
+}
+#google-map{
+  padding: 1rem;
+  width: 100%;
+} 
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
  
-
-} */
-
+  .mission-section li {
+    width: 50%;
+  }
+}
 
 
   

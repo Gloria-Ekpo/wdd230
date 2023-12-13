@@ -48,24 +48,54 @@
             <li><a href="order.html">Order</a></li>
         </ul>
         </nav>
-        <div class="social-media">
-            <a href="images/facebook.png"><img src="images/facebook.png" alt="Facebook Logo"></a>
-            <a href="images/twitter.png"><img src="images/twitter.png" alt="Twitter Logo"></a>
-            <a href="images/instagram-icon.webp"><img src="images/instagram-icon.webp" alt="Instagram Logo"></a>
-        </div>
     </header>
     <main>
-        <!-- About Us Section -->
-  <section id="about-us">
-    <h2>About Bountiful Foods</h2>
-    <!-- Add your images here -->
-    <img src="large-image-1.jpg" srcset="medium-image-1.jpg 1000w, small-image-1.jpg 500w" alt="Image description 1">
-    <img src="large-image-2.jpg" srcset="medium-image-2.jpg 1000w, small-image-2.jpg 500w" alt="Image description 2">
-    <!-- Add your company and area information here -->
-    <p>Company and area information...</p>
-    <!-- Add your Google Map here -->
-    <div id="map">Google Map...</div>
-  </section>
+        <section class="about-section">
+            <img src="./images/smoothie.webp" alt="A smoothie in a glass" class="smoothie-image">
+            <h1>Healthy Food Options for Everyone</h1>
+            <p>Welcome to Bountiful Foods, your one-stop shop for organic, locally grown fruits and produce. We are a small business based in Carlsbad, California, but we serve the coastal area from Los Angeles to San Diego with our food trucks. We sell directly from the farmers in the area, but we also use some national and international suppliers. Our mission is to provide you with delicious and nutritious food options, including organic, made to order, fruit drinks and fruit bags. Whether you are a local or a tourist, we have something for you.</p>
+        </section>
+        <section class="mission-section">
+            <h2>Our Mission, Vision, and Values</h2>
+            <p>Our mission is to provide fresh and healthy food options for everyone. We want to make eating well easy and enjoyable, without compromising on quality or taste. We want to support local farmers and producers, and promote sustainable and ethical practices. We want to educate our customers and inspire them to live a healthier and happier life.</p>
+            <p>Our vision is to become the leading provider of organic, locally grown food in the coastal area of California. We want to expand our reach and impact, and serve more customers and communities. We want to innovate and improve our products and services, and offer more variety and value. We want to create a lasting impression and a positive difference in the world.</p>
+            <p>Our values are the core of our business. They guide our decisions and actions, and shape our culture and identity. They are:</p>
+            <ul>
+                <li>Freshness: We use only the freshest and highest quality ingredients, and we prepare our food daily.</li>
+                <li>Healthiness: We offer nutritious and balanced food options, and we cater to different dietary needs and preferences.</li>
+                <li>Deliciousness: We create tasty and satisfying food options, and we use natural and organic flavors and sweeteners.</li>
+                <li>Convenience: We deliver our food to your doorstep, or you can pick it up from our storefront or food trucks.</li>
+                <li>Service: We treat our customers with respect and care, and we strive to exceed their expectations.</li>
+                <li>Community: We support our local farmers and producers, and we give back to our community through donations and volunteering.</li>
+                <li>Sustainability: We use eco-friendly and biodegradable packaging, and we reduce our waste and carbon footprint.</li>
+                <li>Integrity: We are honest and transparent in our business, and we uphold our standards and values.</li>
+            </ul>
+        </section>
+        <section class="products-section">
+            <h2>Our Products and Services</h2>
+            <p>We offer a range of products and services to suit your needs and preferences. Whether you want a quick snack, a refreshing drink, or a full meal, we have something for you. Here are some of our best-selling products and services:</p>
+            <picture>
+                <source srcset="images/assorted-small.webp" media="(max-width:560px)" />
+                <source
+                  srcset="images/assorted-medium.webp"
+                  media="(max-width:1200px)"
+                />
+                <img
+                  src="images/assorted-large.webp"
+                  alt="Assorted fruits and dishes"
+                  class="assorted-image"
+                />
+              </picture>
+              <p>To order from us, you can visit our website, call us, or email us. You can also find us on our storefront in Carlsbad, or on our food trucks in the coastal area. We accept cash, credit cards, and online payments. We deliver within 24 hours, or you can pick up your order from our locations.</p>
+        </section>
+        <section class="map-section">
+            <h2>Our Location</h2>
+            <p>Here is a Google Map of our location:</p>
+            <!-- Add a Google Map of Carlsbad, California here -->
+            <iframe title="Google Map of Carlsbad" id="google-map" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53464.43454892112!2d-117.32908736340288!3d33.12151274300701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc73453f3bee59%3A0xa4cb5592fcf65d2f!2sCarlsbad%2C%20CA!5e0!3m2!1sen!2sus!4v1702426763070!5m2!1sen!2sus"
+             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
     </main>
 
               
@@ -77,14 +107,20 @@
             </div>
             <div class="footer-contact">
                 <h4>Bountiful Foods</h4>
-                <p>220 S 2nd W <br>Rexburg, ID 83440</p>
+                <p>6669 Peregrine PI<br>Carlsbad, CA 92011</p>
                 <p><a href="bountiful@gmail.com">info@BountifulFoods.org</a></p>
                 <p>650-316-0671</p>
-                <p>Resources/Attributions: www.fruityvice.com, openweathermap.org</p>
+                <p>Resources:
+                  <a href="https://www.fruityvice.com/">www.fruityvice.com</a>, <a href="https://openweathermap.org/">openweathermap.org</a>
             </div>
+            <div class="social-media">
+              <a href="images/facebook.png"><img src="images/facebook.png" alt="Facebook Logo"></a>
+              <a href="images/twitter.png"><img src="images/twitter.png" alt="Twitter Logo"></a>
+              <a href="images/instagram-icon.webp"><img src="images/instagram-icon.webp" alt="Instagram Logo"></a>
+          </div>
         </div>
         <div class="footer-base">
-            <p>© <span id="currentyear">2023</span> | Gloria Ekpo | Rexburg, ID | Last Modified <span id="dateModified"></span>
+            <p>© <span id="currentyear">2023</span> | Gloria Ekpo | Final Project WDD 230 | Last Modified <span id="dateModified"></span>
           </p>
     
         </div>

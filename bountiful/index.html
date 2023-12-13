@@ -32,13 +32,13 @@
     <script src="scripts/weather.js" defer></script>
     <script src="scripts/scripts.js" defer></script>
     <script src="scripts/forecast.js" defer></script>
-    <script src="scripts/drink-count.js defer"></script>
+    <script src="scripts/drink-count.js" defer></script>
 </head> 
 
 <body>
     <header>
         <div class="logo">
-        <img src="./images/Fruit Store Premium Product Logo.png" height="160" width="160" alt="Bountiful Logo" >
+        <img src="./images/Fruit-Logo.png" height="160" width="160" alt="Bountiful Logo" >
         </div>
         <nav>
         <button class="menu-hide">X</button>
@@ -52,7 +52,7 @@
     </header>
 
     <main id="index-main">
-        <section id="hero">
+       <div class="hero">
           <div class="hero-container">
             <picture>
               <source srcset="images/small-hero.webp" media="(max-width:560px)" />
@@ -62,11 +62,14 @@
               />
               <img src="images/large-hero.webp" alt="Bountiful hero image" />
             </picture>
-            <a href="order.html"
-              ><button id="order-button">Order your smoothie now!</button></a
-            >
+            <!-- Remove the a element and use a form element -->
+            <form method="get" action="order.html">
+             <button id="order-button">Order your smoothie now!</button>
+            </form>
+
           </div>
-        </section>
+        </div>
+       
 
         <h1>Bountiful Foods</h1>
            <!-- About Section -->
@@ -118,7 +121,7 @@
     <div class="reviews-content">
       <!-- Review Card 1 -->
       <div class="review-card">
-        <img src="./images/smoothie review.jpg" alt="Image of a person reviewing a drink">
+        <img src="./images/smoothie-review.webp" alt="Image of a person reviewing a drink">
         <p>
           "Bountiful Foods is our go-to place for a quick, healthy snack. Their fruit drinks are not only delicious, 
           but also packed with nutrients. We love that they use locally sourced, organic fruits. It's a great way to support local farmers 
@@ -143,7 +146,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
-                <img src="./images/Fruit Store Premium Product Logo.png" alt="mylogo" width="70">
+                <img src="./images/Fruit-Logo.png" alt="mylogo" width="70">
             </div>
             <div class="footer-contact">
                 <h4>Bountiful Foods</h4>

@@ -53,18 +53,21 @@
     </header>
     <main>
         
-
-
-
         <section id="order-confirmation">
-            <h2>Thank You for Your Order!</h2>
+            <h2 class="thanks">Thank You for Your Order!</h2>
             <div id="order-details">
               <!-- Order details will be populated dynamically -->
             </div>
-            <p>You can pick up your drink in approximately 15 minutes. If there is a problem with your order, 
-                please contact us at email@example.com or (123) 456-7890.</p>
-            <p>We would appreciate it if you could leave a review on our social media pages. Thank you for choosing Bountiful Foods!</p>
+            <div id="output-area"></div>
+            <div id="pickup-time"></div>
+            <p>You can pick up your drink in approximately 30 minutes. If there is a problem with your order, 
+                please contact us at <a href="bountiful@gmail.com">info@BountifulFoods.org</a> or (650) 316-0671.</p>
           </section>
+          <div id="review">
+            <p>We would appreciate it if you could leave a review on our social media pages.</p>
+            <a href="#" id="leave-review">Leave a Review</a>
+            <p>Thank you for choosing Bountiful Foods!</p>
+          </div>
     </main>
 
     <footer>
@@ -74,13 +77,20 @@
             </div>
             <div class="footer-contact">
                 <h4>Bountiful Foods</h4>
-                <p>220 S 2nd W <br>Rexburg, ID 83440</p>
+                <p>6669 Peregrine PI<br>Carlsbad, CA 92011</p>
                 <p><a href="bountiful@gmail.com">info@BountifulFoods.org</a></p>
                 <p>650-316-0671</p>
+                <p>Resources:
+                  <a href="https://www.fruityvice.com/">www.fruityvice.com</a>, <a href="https://openweathermap.org/">openweathermap.org</a>
             </div>
+            <div class="social-media">
+              <a href="images/facebook.png"><img src="images/facebook.png" alt="Facebook Logo"></a>
+              <a href="images/twitter.png"><img src="images/twitter.png" alt="Twitter Logo"></a>
+              <a href="images/instagram-icon.webp"><img src="images/instagram-icon.webp" alt="Instagram Logo"></a>
+          </div>
         </div>
         <div class="footer-base">
-            <p>© <span id="currentyear">2023</span> | Gloria Ekpo | Rexburg, ID | Last Modified <span id="dateModified"></span>
+            <p>© <span id="currentyear">2023</span> | Gloria Ekpo | Final Project WDD 230 | Last Modified <span id="dateModified"></span>
           </p>
     
         </div>

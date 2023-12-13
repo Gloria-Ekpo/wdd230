@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', async function () {
   const choice1 = urlParams.get('fruit1');
   const choice2 = urlParams.get('fruit2');
   const choice3 = urlParams.get('fruit3');
-  const instructions = urlParams.get('instructions');
+  const instructions = urlParams.get('special-instructions');
 
   const outputArea = document.getElementById('output-area');
   const pickupTimeElement = document.getElementById('pickup-time');

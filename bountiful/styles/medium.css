@@ -12,3 +12,49 @@
 
 }
 
+/* Style the section element */
+#order-confirmation {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.thanks {
+  text-align: center;
+  margin: 0 0 20px 0;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+p {
+  text-align: center;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+#order-confirmation p:first-of-type,
+#review p:last-of-type, #review p {
+  font-weight: bold;
+}
+
+#leave-review, #pickup-time{
+  display: block;
+  padding: 10px 20px;
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  margin: 20px;
+
+}
+
+#leave-review:hover,
+#order-confirmation a:hover {
+  background-color: darkorange;
+  transition: 0.3s;
+}
+
+

@@ -26,7 +26,7 @@
 }
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1120px) {
   .menu-show, .menu-hide, .menu-show.showing, .menu-hide.showing{
     display: none;
 } 

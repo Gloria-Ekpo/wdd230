@@ -4,11 +4,15 @@
   }   
 
   #nav-menu{
-      /* display: flex;         */
+      display: flex;        
       flex-direction: row;
   }
   #nav-menu.showing{
       display: flex;
+  }
+  .fruit-drink{
+    width: 400px;
+    height: 400px;
   }
 }
 
@@ -22,6 +26,7 @@
 
   #nav-menu {
     margin-top: 10px; 
+    display: none;
   }
 
 }

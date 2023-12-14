@@ -412,6 +412,46 @@ footer a:hover {
 }
 
 
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#order-drink {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Style for form labels and inputs */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+/* Style for submit button */
+#submit {
+  background-color: #FFA500;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
   
  
  

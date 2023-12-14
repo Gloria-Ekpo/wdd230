@@ -1,5 +1,32 @@
-/* CSS for large screens */
-@media (min-width: 1200px) {
+@media screen and (min-width: 1120px) {
+  #nav-menu {
+      display: flex;
+  }
+
+  nav ul {
+      flex-direction: row;
+
+  }
+
+  nav ul li a {
+      text-align: center;
+  }
+  .menu-show,
+    .menu-hide,
+    .menu-show.showing,
+    .menu-hide.showing {
+        display: none;
+    }
+    #nav-menu.showing {
+
+      display: flex;
+
+  }
+
+}
+
+
+@media screen and (min-width: 1200px) {
   .menu-show, .menu-hide, .menu-show.showing, .menu-hide.showing{
     display: none;
 } 
